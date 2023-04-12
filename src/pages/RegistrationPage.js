@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 import "./RegistrationPage.css";
 import background from "../assets/images/background.png";
 import superapp from "../assets/images/superApp.png";
@@ -46,6 +47,7 @@ function RegistrationPage() {
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [isChecked, setIsChecked] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -61,14 +63,22 @@ function RegistrationPage() {
         "formData",
         JSON.stringify({ name, username, email, mobile, isChecked })
       );
-      toast.success("Form data saved to localStorage!");
-    } else {
-      Object.values(validationErrors).forEach((errorMsg) => {
-        toast.error(errorMsg, {
-          position: "bottom-right",
-          autoClose: 2000,
+        toast.success("Form data saved to localStorage!", {
+            autoClose: 2000,
         });
-      });
+        toast.success("Redirecting to Category page...", {
+            autoClose: 2000,
+        });
+        setTimeout(() => {
+            navigate('/category');
+        }, 2000);
+    } else {
+        Object.values(validationErrors).forEach((errorMsg) => {
+            toast.error(errorMsg, {
+                position: "bottom-right",
+                autoClose: 2000,
+            });
+        });
     }
   };
 
