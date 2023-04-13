@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./MovieBox.css";
 
-function MovieBox() {
+function MovieBox({ title, image, color, onClick, isSelected }) {
   return (
-    <div>MovieBox</div>
-  )
+    <div
+      className={`box ${isSelected ? "selected" : ""}`}
+      onClick={onClick}
+      style={{ backgroundColor: color }}
+    >
+      <div className="box__title">{title}</div>
+      <img src={image} alt="img" id="box__image" />
+    </div>
+  );
 }
 
-export default MovieBox
+export default MovieBox;
