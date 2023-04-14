@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Category.css";
+import { useNavigate } from "react-router-dom";
 import CardContainer from "../components/CardContainer/CardContainer";
 import MovieBox from "../components/moviebox/MovieBox";
 import MovieName from "../components/moviename/MovieName";
@@ -17,6 +18,7 @@ import western from "../assets/categoryImages/western.png";
 function Category() {
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
   const [selectedCards, setSelectedCards] = useState([]);
+  const navigate = useNavigate();
 
   const handleCardClick = (title) => {
     if (selectedCards.includes(title)) {
@@ -32,6 +34,7 @@ function Category() {
 
   const handleNextPage = () => {
     console.log("Next Page");
+    navigate("/profile");
   };
 
   useEffect(() => {
