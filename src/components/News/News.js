@@ -15,14 +15,11 @@ function News() {
       .then((res) => setNews(res.data.articles[5]));
   }, []);
 
-  console.log(news);
-
   useEffect(() => {
     const ddmmyyyy = new Date(news.publishedAt);
     let day = ddmmyyyy.getDate();
     let month = ddmmyyyy.getMonth();
     let year = ddmmyyyy.getFullYear();
-    console.log(date);
     if (day < 10) day = `0${day}`;
     if (month < 10) month = `0${month}`;
     const dateFormated = `${day}-${month}-${year}`;
@@ -44,23 +41,42 @@ function News() {
   }, [currTime, news.publishedAt]);
 
   return (
-    <div className="news">
-      <div
-        className="news__image__title"
-        style={{
-          backgroundImage: `url(${news.urlToImage})`,
-          backgroundSize: "cover",
-        }}
-      >
-        <h3>{news.title}</h3>
-        <h3>
-          {date} | {currTime}
-        </h3>
-      </div>
-      <div className="news__description">
-        <p>{news.description}</p>
-      </div>
-    </div>
+    <>
+      {news.length !== 0 ? (
+        <div className="news">
+          <div
+            className="news__image__title"
+            style={{
+              backgroundImage: `url(${news.urlToImage})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <h3>{news.title}</h3>
+            <h3>
+              {date} | {currTime}
+            </h3>
+          </div>
+          <div className="news__description">
+            <p>{news.description}</p>
+          </div>
+        </div>
+      ) : (
+        <div class="news_lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      )}
+    </>
   );
 }
 
