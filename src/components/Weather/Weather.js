@@ -17,7 +17,7 @@ function Weather() {
       )
       .then((res) => setWeather(res.data.current));
     console.log(weather);
-  }, [weather]);
+  }, []);
 
   useEffect(() => {
     const ddmmyyyy = new Date();
@@ -86,7 +86,7 @@ function Weather() {
           </div>
         </div>
       ) : (
-        <div class="lds-spinner">
+        <div className="lds-spinner">
           <div></div>
           <div></div>
           <div></div>

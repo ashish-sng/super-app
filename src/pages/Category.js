@@ -33,7 +33,6 @@ function Category() {
   };
 
   const handleNextPage = () => {
-    console.log("Next Page");
     navigate("/profile");
   };
 
