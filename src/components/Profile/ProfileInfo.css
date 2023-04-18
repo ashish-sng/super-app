@@ -1,65 +1,73 @@
-.profile__info{
-    height: 55vh;
-    width: 60vw;
-    background-color: #5746EA;
-    display: flex;
-    border-radius: 2rem;
-    margin: 2vh 2vw;
+.profile__info {
+  height: 38vh;
+  width: 37vw;
+  background-color: #5746ea;
+  display: flex;
+  border-radius: 1vw;
+  margin: 1vh 1vw;
 }
 
-#avatar{
-    height: 50vh;
-    margin: 2vh 2vw;
-    position: relative;
-    top: 1vh;
+#avatar {
+  height: 95%;
+  width: 150%;
+  margin: 4px 5px;
+  position: relative;
+  top: 1vh;
 }
 
-.profile__info__details{
-    color: white;
-    margin: 2vh 2vw;
-    text-align: left;
+.profile__info__details {
+  width: 90%;
+  color: white;
+  margin: 15px 5px;
+  text-align: left;
+  position: relative;
+  left: 15%;
 }
 
-.profile__info__details__name > span{
-    margin: 1rem 0;
+.profile__info__details__name > span {
+  font-size: 1.2rem;
+  margin: 5px 0;
 }
 
-.profile__info__details__email > span{
-    margin: 1rem 0;
+.profile__info__details__email > span {
+  font-size: 1.2rem;
+  margin: 5px 0;
 }
 
-.profile__info__details__username > span{
-    font-size: 3rem;
-    margin: 1rem 0;
+.profile__info__details__username > span {
+  font-size: 2.5rem;
+  margin: 5px 0;
 }
 
-.profile__info__cards__title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    margin: 3px 1vw;
-    padding: 0 1vw;
-    text-align: left;
-    border: 2px solid black;
-    border-radius: 1rem;
-    width: fit-content;
+.profile__info__cards__title {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  color: white;
+  margin: 1px 1px;
+  padding: 0 2px;
+  text-align: left;
+  border: 2px solid black;
+  border-radius: 1vh;
+  width: fit-content;
 }
 
-.profile__info__cards__title > span{
-    font-size: 1.5rem;
-    color: black;
+.profile__info__cards__title > span {
+  font-size: 15px;
+  color: black;
 }
 
-.profile__info__cards__title > h3{
-    padding: 5px 5px;
-    margin: 2px;
+.profile__info__cards__title > h3 {
+  font-size: 1rem;
+  padding: 1px 1px;
+  margin: 1px;
 }
 
-.profile__info__cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2vh 2vw;
+.profile__info__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 20vw;
+  gap: 2px;
+  margin: 2px 2px;
 }

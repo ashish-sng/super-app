@@ -12,8 +12,8 @@ function News() {
       .get(
         "https://newsapi.org/v2/everything?q=apple&from=2023-04-13&to=2023-04-13&sortBy=popularity&apiKey=de4b8e615b834a419097cb5d008d8e81"
       )
-      .then((res) => setNews(res.data.articles[5]));
-  }, [news]);
+      .then((res) => setNews(res.data.articles[0]));
+  }, []);
 
   useEffect(() => {
     const ddmmyyyy = new Date(news.publishedAt);

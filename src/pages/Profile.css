@@ -1,5 +1,31 @@
-.profile__parent{
-    display: flex;
-    padding: 2vh 2vw;
-    background-color: black;
+.profile__parent {
+  display: flex;
+  padding: 2vh 2vw;
+  background-color: black;
+}
+
+.pleft__top {
+  display: flex;
+}
+
+.pleft__left {
+  display: flex;
+  flex-direction: column;
+  width: 38vw;
+  height: 60vh;
+}
+
+.pleft__right {
+  height: 60vh;
+  width: 25vw;
+  background-color: orange;
+  border-radius: 2vh;
+  margin: 1vh 1vw;
+}
+
+.pleft__bottom {
+  height: 30vh;
+  width: 63vw;
+  border-radius: 2vh;
+  margin: 1vh 1vw;
 }

@@ -16,7 +16,6 @@ function Weather() {
         "http://api.weatherapi.com/v1/current.json?key=304f394562c845ca894165801231404&q=INDIA&aqi=no"
       )
       .then((res) => setWeather(res.data.current));
-    console.log(weather);
   }, []);
 
   useEffect(() => {

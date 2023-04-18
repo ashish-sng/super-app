@@ -26,6 +26,7 @@
 }
 
 .bottomtext {
+  width: 35vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,6 +34,7 @@
 }
 
 .cright {
+  height: 50vh;
   width: 65vw;
 }
 
@@ -45,7 +47,7 @@
   font-weight: 500;
   border: none;
   border-radius: 2rem;
-  float: right;
-  margin-right: 8rem;
-  margin-top: 1.5rem;
+  position: relative;
+  top: 90vh;
+  right: 10vw;
 }

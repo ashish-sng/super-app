@@ -138,15 +138,15 @@ function Category() {
             color="#6CD061"
           />
         </CardContainer>
-        <div>
-          <button
-            onClick={handleNextPage}
-            disabled={isButtonDisabled}
-            className="next"
-          >
-            Next Page
-          </button>
-        </div>
+      </div>
+      <div>
+        <button
+          onClick={handleNextPage}
+          disabled={isButtonDisabled}
+          className="next"
+        >
+          Next Page
+        </button>
       </div>
     </div>
   );
