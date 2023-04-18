@@ -1,26 +1,26 @@
-.box{
-    height: 10rem;
-    width: 10rem;
-    border: none;
-    border-radius: 12px;
-    box-sizing: border-box;
+.box {
+  height: 23vh;
+  width: 12vw;
+  border: none;
+  border-radius: 12px;
+  box-sizing: border-box;
 }
 
-.box__title{
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: white;
-    text-align: left;
-    margin-top: 1rem;
-    margin-left: 1rem;
+.box__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  text-align: left;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
-#box__image{
-    height: 5rem;
-    width: 9rem;
-    margin-top: 1.5rem;
+#box__image {
+  height: 12vh;
+  width: 11vw;
+  margin-top: 1rem;
 }
 
-.selected{
-    border: 3px solid #11B800;
+.selected {
+  border: 3px solid #11b800;
 }
