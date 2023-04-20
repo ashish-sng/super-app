@@ -37,7 +37,7 @@ function Weather() {
     let tzone = hours >= 12 ? "PM" : "AM";
     hours = hours % 12 || 12;
     if (hours < 10) hours = `0${hours}`;
-    if(minutes < 10) minutes = `0${minutes}`;
+    if (minutes < 10) minutes = `0${minutes}`;
     const timeFormated = `${hours}:${minutes} ${tzone}`;
     setTime(timeFormated);
   }, [weather]);
@@ -105,5 +105,3 @@ function Weather() {
 }
 
 export default Weather;
-
-
