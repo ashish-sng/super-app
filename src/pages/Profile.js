@@ -5,8 +5,14 @@ import Weather from "../components/Weather/Weather";
 import News from "../components/News/News";
 import Notes from "../components/Notes/Notes";
 import Timer from "../components/Timer/Timer";
+import { useNavigate } from "react-router-dom";
 
 function Profile() {
+  const navigate = useNavigate();
+  const moviePage = () => {
+    navigate("/movie");
+  };
+
   return (
     <div className="profile__parent">
       <div className="pleft">
@@ -26,6 +32,9 @@ function Profile() {
       <div className="pright">
         <News />
       </div>
+      <button onClick={moviePage} className="browse__button">
+        Browse
+      </button>
     </div>
   );
 }
