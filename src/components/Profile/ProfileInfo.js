@@ -1,15 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import "./ProfileInfo.css";
 import avatar from "../../assets/images/display_picture.png";
 
 function ProfileInfo() {
   const info = JSON.parse(localStorage.getItem("formData"));
-  const cards = JSON.parse(localStorage.getItem("selectedCards"));
+  const [cards, setCards] = useState(JSON.parse(localStorage.getItem("selectedCards")));
+  
   const removeSelected = (e) => {
     const selectedCard = e.target.parentElement.children[0].innerText;
     const newCards = cards.filter((card) => card !== selectedCard);
     localStorage.setItem("selectedCards", JSON.stringify(newCards));
-    window.location.reload();
+    setCards(newCards);
   };
 
   return (

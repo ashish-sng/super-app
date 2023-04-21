@@ -82,9 +82,6 @@ function Timer() {
 
   const renderTime = (value) => {
     if (value < 0) {
-      setTimeout(() => {
-        window.location.reload();
-      }, 2000);
       return <span>Time's up!</span>;
     }
     let minutes = Math.floor(value / 60);
