@@ -1,6 +1,7 @@
 .parent {
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 .left {
   flex: 1 2 auto;
@@ -22,7 +23,7 @@
 }
 
 #login {
-  font-size: 1px;
+  font-size: 2.2vh;
   height: 2rem;
   width: 5rem;
   font-weight: 700;
@@ -121,7 +122,7 @@ input {
 }
 
 .checkbox-content {
-  font-size: 5px;
+  font-size: 2vh;
   font-weight: 400;
   color: #7C7C7C;
 }
@@ -135,11 +136,11 @@ input {
   gap: 1rem;
   align-items: center;
   height: 30vh;
-  font-size: 1px;
+  font-size: 1vh;
 }
 
 .bottom-content > span {
-  font-size: 5px;
+  font-size: 1.8vh;
   font-weight: 400;
   color: #7C7C7C;
   text-align: left;
