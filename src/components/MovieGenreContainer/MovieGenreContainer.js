@@ -25,7 +25,7 @@ function MovieGenreContainer({ title }) {
       .catch(function (error) {
         console.error(error);
       });
-  }, []);
+  }, [title]);
 
   const moviePics = data.slice(1, 5);
   console.log(moviePics);

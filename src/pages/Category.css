@@ -2,6 +2,7 @@
   display: flex;
   background-color: #1e1e1e;
   height: 100vh;
+  overflow: hidden;
 }
 .cleft {
   width: 35vw;
